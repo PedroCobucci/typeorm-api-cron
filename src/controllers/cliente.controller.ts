@@ -10,6 +10,8 @@ export class ClienteController{
             const NovoCliente = new Cliente()
             Object.assign(NovoCliente, req.body)
 
+            // console.log('a', req.body.messages[0].text.body)
+
             if( await ClienteRepository.findOneBy({telefone: NovoCliente.telefone}) ){
                 return res.status(409).json({message: 'cliente com tal telefone já cadastrado'})
             }
