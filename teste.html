@@ -1,40 +1,61 @@
-<!-- Importando os arquivos CSS do Bulma -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 
-<!-- Formulário -->
-<section class="hero is-fullheight is-dark">
-  <div class="hero-body">
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-half">
-          <form>
-            <h2 class="title has-text-centered mb-5">Formulário</h2>
-            <div class="field">
-              <label class="label">Nome:</label>
-              <div class="control">
-                <input class="input" type="text" placeholder="Insira seu nome">
-              </div>
-            </div>
-            <div class="field">
-              <label class="label">Email:</label>
-              <div class="control">
-                <input class="input" type="email" placeholder="Insira seu email">
-              </div>
-            </div>
-            <div class="field">
-              <label class="label">Senha:</label>
-              <div class="control">
-                <input class="input" type="password" placeholder="Insira sua senha">
-              </div>
-            </div>
-            <div class="field is-grouped is-grouped-centered mt-5">
-              <div class="control">
-                <button class="button is-primary" type="submit">Enviar</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Saudades, meu amor!</title>
+    <meta charset="UTF-8">
+    <style>
+      body {
+        background-color: #ffc0cb;
+        font-family: Arial, sans-serif;
+        animation: moveBackground 30s ease infinite;
+        background-image: url("https://png.pngtree.com/png-vector/20201231/ourlarge/pngtree-cute-cartoon-cat-with-love-heart-valentine-design-element-png-image_2686893.jpg");
+        background-repeat: repeat;
+      }
+      
+      h1 {
+        color: #ff69b4;
+        text-align: center;
+        margin-top: 50px;
+      }
+      
+      p {
+        font-size: 24px;
+        color: #333;
+        text-align: center;
+        margin-top: 30px;
+        line-height: 1.5;
+      }
+      
+      img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 50px;
+      }
+      
+      @keyframes moveBackground {
+        0% {
+          background-position: 0 0;
+        }
+        50% {
+          background-position: 100% 0;
+        }
+        100% {
+          background-position: 0 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Saudades, meu amor!</h1>
+    <img src="https://i.pinimg.com/originals/a1/cd/2e/a1cd2e4a82bf9407d751f02f81baf257.png" alt="Imagem de um coração">
+    <p>
+      Sinto saudades, meu amor,<br>
+      De cada momento que passamos juntos<br>
+      De cada sorriso e abraço apertado<br>
+      De cada palavra dita com carinho<br>
+      De cada olhar que trocamos<br>
+      Te amo muito, meu amor, não se esqueça disso jamais!
+    </p>
+  </body>
+</html>
