@@ -10,7 +10,7 @@ export class NotificacaoController{
             const NovaNotificacao = new Notificacao()
             Object.assign(NovaNotificacao, req.body)
 
-            if( await NotificacaoRepository.findOneBy({data_notificacao: NovaNotificacao.data_notificacao}) ){
+            if( await NotificacaoRepository.findOneBy({data_vencimento: NovaNotificacao.data_vencimento}) ){
                 return res.status(409).json({message: 'Já existe uma notificação para este dia'})
             }
 

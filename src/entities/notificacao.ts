@@ -5,13 +5,13 @@ import { Cliente } from "./cliente";
 export class Notificacao{
 
     @PrimaryGeneratedColumn()
-    id: number;
+    id: Number;
   
     @Column({type: 'varchar'})
     descricao_notificacao: string;
   
-    @Column({type: 'varchar'})
-    data_notificacao: string;
+    @Column({type: 'date'})
+    data_vencimento: Date;
   
     @Column({type: 'varchar'})
     atributo_notificacao: string
@@ -19,7 +19,13 @@ export class Notificacao{
     @Column({type: 'varchar', length: 15})
     status: string
 
-    @ManyToOne(() => Cliente, cliente => cliente.notificacao,{onDelete: 'CASCADE'})
+    @Column({type: 'date', nullable: true})
+    data_contato: Date
+
+    @Column({type: 'varchar'})
+    mensagem: string
+
+    @ManyToOne(() => Cliente, cliente => cliente.notificacoes,{onDelete: 'CASCADE'})
     @JoinColumn()
     cliente: Cliente
 

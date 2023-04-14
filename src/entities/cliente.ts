@@ -26,6 +26,6 @@ export class Cliente{
     status: boolean
 
     @OneToMany(() => Notificacao, notificacao => notificacao.cliente)
-    notificacao: Notificacao[]
+    notificacoes: Notificacao[]
 
 }

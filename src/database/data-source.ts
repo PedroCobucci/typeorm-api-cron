@@ -3,6 +3,8 @@ import { Cliente } from "../entities/cliente"
 import { Notificacao } from "../entities/notificacao"
 import { default1681332450763 } from "./migrations/1681332450763-default"
 import { default1681335247503 } from "./migrations/1681335247503-default"
+import { default1681488794644 } from "./migrations/1681488794644-default"
+import { default1681496355555 } from "./migrations/1681496355555-default"
 
 export const MysqlDataSource = new DataSource({
     type: "mysql",
@@ -18,6 +20,6 @@ export const MysqlDataSource = new DataSource({
     ],
     migrations:[
         `${__dirname}/migrations/*.ts`,
-        default1681335247503
+        default1681496355555
     ]
 })
