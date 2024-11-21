@@ -72,7 +72,7 @@ export async function sendCustom(numero: number, texto: string) {
             "body": `${texto}`
         }
     };
-    const headers = { Authorization: 'Bearer EAARWSWZCNeasBAMTkkypCeOVznJdy7LZB9I8ZBzG4onzJQysrVLK7AJA2880C609ZBlxKZCZCVrZBWTrEktoQwhxnzkGwQ0tBJB4M7ZCxwXxUkxIAF26FZA1o5GlwDsE20DETAjkiYs6wwYxCvODveEJXIsy6ZA4tiMGGE7boVF4h7wmxemyrOYchT8Fc7bcAIA1pjM8g47Wcf0wZDZD', 'Content-Type': 'application/json' };
+    const headers = { Authorization: 'Bearer token', 'Content-Type': 'application/json' };
 
     axios.post(url, data, { headers })
         .then(response => {
