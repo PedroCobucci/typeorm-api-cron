@@ -38,7 +38,7 @@ cron.schedule('* * * * *', async () => {
                         cliente.atributo_cliente,
                         moment(notificacao.data_vencimento, 'YYYY-MM-DD').format('DD/MM/YYYY'),
                         notificacao.id,
-                        'EAARWSWZCNeasBALugUArQCG8P8n3Groj51Wph88HZCzAVVb1AqZBtKvtn4onZAyM0Qsmz3R51SSVDOgJiRbX4ilh37eoM7CrDOagvEn1WOgUOjQZAKxjpvWyceBnaFXPbf8BMKWdQW40dbQzSylJKumgFentyTUgxwTyLcAHRGiseTZBvXwbdlhKlB6OB4nL39BJnfWzPCZBAZDZD'
+                        'token'
                     )
 
                 }
